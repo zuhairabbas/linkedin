@@ -1,103 +1,352 @@
-<!DOCTYPE html>
-<!-- saved from url=(0036) -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Rails Bootstrap</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html>
+<head>
+    <title></title>
+    <link href="home.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<div class="global-header " role="banner">
+ <div id="top-header">
+ <div class="wrapper">
+    <h2 class="logo-container">
+      <a href="home.html" class="logo" id="li-logo">
+        LinkedIn Home
+      </a>
+    </h2>
+<ul class="nav" role="navigation">
+  <li class="nav-item">
+    <a href="linkedin.html" class="nav-link">
+      What is LinkedIn?
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="join.html" class="nav-link" rel="nofollow">
+      Join Today
+    </a>
+  </li>
+  <li class="nav-item">
+ <a href="signin.html" class="nav-link" rel="nofollow">
+ Sign In
+ </a>
+  </li>
+</ul>
+ </div>
+ </div>
+ 
+</div>
+<div id="body1" class="" role="main">
+<div class="wrapper">
+<div id="main1">
+  <div id="content">
+  <h1>Over 225 million professionals use LinkedIn to exchange information, ideas and opportunities</h1>
+    <ul>
+      <li id="reconnect">Stay informed about your contacts and industry</li>
+      <li id="answers">Find the people &amp; knowledge you need to achieve your goals</li>
+      <li id="power">Control your professional identity online</li>
+    </ul>
+  </div>
+      <div class="jointoday" id="module-id3">
+        <div class="header"><h2>Join LinkedIn Today</h2></div>
+      <div class="content">
+        <form action="linkedin.html" method="POST" name="coldRegistrationForm" novalidate="novalidate" class="feature" data-jsenabled="check" id="control_gen_1">
+        <input type="hidden" name="isJsEnabled" value="true">
 
-    <!-- Le styles -->
-    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="/stylesheets/docs.css" rel="stylesheet">
-
-
-    <!-- Le javascript -->
-    <script src="/javascripts/jquery.min.js"></script>
-    <script src="/javascripts/jquery.tablesorter.min.js"></script>
-    <script src="/javascripts/bootstrap-dropdown.js"></script>
-    <script src="/javascripts/jquery.tablesorter.min.js"></script>
-    <script src="/javascripts/application.js"></script>
-
-
-    <!-- Le fav and touch icons -->
-    <link rel="apple-touch-icon" href="/images/ico/bootstrap-apple-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/ico/bootstrap-apple-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/ico/bootstrap-apple-114x114.png">
-
-
-    <body>
-
-    <!-- Topbar ================================================== -->
-    <div class="topbar" data-dropdown="dropdown">
-      <div class="topbar-inner">
-        <div class="container">
-          <a class="brand" href="/">Parkables</a>
-          <ul class="nav">
-            <li><a href="/">Home</a></li>
-            <li><%= link_to "Secure Page", secure_index_path %></li>
-            <li><%= link_to "Feedback", feedbacks_path %></li>
-            <li><a href="http://twitter.github.com/bootstrap">Bootstrap Docs</a></li>
-            <li><a href="http://twitter.github.com/bootstrap/javascript.html">Bootstrap Js</a></li>
-          </ul>
-          <ul class="nav secondary-nav">
-            <li class="dropdown">
-           		<% if user_signed_in? %>  
-                <a href="#" class="dropdown-toggle"><%= current_user.email %></a>
-          		<% else %>  
-              <a href="#" class="dropdown-toggle">Sign in</a>
-		          <% end %>
-              <ul class="dropdown-menu">
-           			<% if user_signed_in? %>  
-          			<li><%= link_to "Edit profile", '/users/edit' %></li> 
-          			<li><%= link_to "Sign out", destroy_user_session_path %></li> 
-          			<% else %>  
-	          		<li><%= link_to "Sign up", new_user_registration_path %></li>
-                <li class="divider"></li>
-		          	<li><%= link_to "Sign in", new_user_session_path %></li>
-		          	<% end %>
-              </ul>
+        <fieldset>
+         
+          <ul>
+                <li id="first-name">
+                     <label for="firstName-coldRegistrationForm">First Name:</label>
+                    <div class="fieldgroup">
+                      <span class="error" id="firstName-coldRegistrationForm-error"></span>
+                        <input type="text" name="firstName" value="" id="firstName-coldRegistrationForm" maxlength="20">
+                    </div>
+                </li>
+                <li id="last-name">
+                    <label for="lastName-coldRegistrationForm">Last Name:</label>
+                    <div class="fieldgroup">
+                      <span class="error" id="lastName-coldRegistrationForm-error"></span>
+                      <input type="text" name="lastName" value="" id="lastName-coldRegistrationForm" maxlength="40">
+                    </div>
+                </li>
+            <li id="email-address">
+                <label for="email-coldRegistrationForm">Email:</label>
+                <div class="fieldgroup">
+                    <span class="error" id="email-coldRegistrationForm-error"></span>
+                  <input type="email" name="email" value="" id="email-coldRegistrationForm" maxlength="128" data-ime-mode-disabled="">
+                </div>  
             </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Masthead (blueprinty thing)
-    ================================================== -->
-    <header class="jumbotron masthead" id="overview">
-      <div class="inner">
-        <div class="container">
-          <h1>Parkables...</h1>
-          <p class="lead">
-            Parkables, private social parking<br/>
-            made super easy. 
+            <li id="password">
+                <label for="password-coldRegistrationForm">Password:</label>
+                <div class="fieldgroup">
+                  <span class="error" id="password-coldRegistrationForm-error"></span>
+                  <input type="password" name="password" value="" id="password-coldRegistrationForm">
+                  <p class="hint">6 or more characters</p>
+                </div>
+            </li>
+          </ul> 
+           <p class="action">
+             <input type="submit" name="" value="Join Now" id="btn-submit" class="btn-tertiary"> <a href="#agreement">*</a>
           </p>
-          <p><strong>Nerd alert:</strong> Bootstrap is <a href="#less" title="Read about using Bootstrap with Less">built with Less</a> and was designed to work out of the gate with modern browsers in mind.</p>
-        </div><!-- /container -->
-      </div>
-    </header>
+          <div class="progress-indicator"></div>
+          <p class="linkedin-message">Already on LinkedIn?
+              <a href="signin.html" tracking="hb_signin" rel="nofollow">Sign in.</a>
+         </p>
+        </fieldset>
+          <input type="hidden" name="webmailImport" value="false" id="webmailImport-coldRegistrationForm"><input type="hidden" name="trcode" value="" id="trcode-coldRegistrationForm"><input type="hidden" name="genie-reg" value="" id="genie-reg-coldRegistrationForm"><input type="hidden" name="mod" value="" id="mod-coldRegistrationForm"><input type="hidden" name="csrfToken" value="ajax:2881339740855153910" id="csrfToken-coldRegistrationForm"><input type="hidden" name="sourceAlias" value="0_0sXMGPZtufwmfGLj5r_vFr" id="sourceAlias-coldRegistrationForm">
+          </form>
+</div></div>
+  <div id="search-browse">
+    <div id="search">
+     <form name="searchForm" action="/pub/dir/?csrfToken=ajax%3A2881339740855153910&amp;goback=%2Enmp_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1" method="get">
+      <h3>Search for someone by name:</h3>
+      <ul>
+            <li>
+                <label for="first" id="control_gen_2" style="display: none;">First Name</label>
+              <input type="text" name="first" id="first" placeholder="First Name">
+            </li>
+            <li>              
+                <label for="last" id="control_gen_3" style="display: none;">Last Name</label>
+     <input type="text" name="last" id="last" placeholder="Last Name">
+            </li>
+      </ul>
+      <p class="action"><input class="btn-secondary" type="submit" name="search" value="Go"></p>
+    </form>
+   </div>
+<div id="directory" class="us">
+  <h3>
+    
+    
+        LinkedIn member directory:
+      
+    
+  </h3>
+  <ol type="a" class="primary">
+    
+      
+        <li>
+          <a href="home.html">a</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">b</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">c</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">d</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">e</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">f</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">g</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">h</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">i</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">j</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">k</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">l</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">m</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">n</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">o</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">p</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">q</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">r</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">s</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">t</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">u</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">v</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">w</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">x</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">y</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="home.html">z</a>
+        </li>
+      
+    
+    
+      <li>    
+            <a href="home.html" class="callout-trigger nlcl-hovercard-trigger" id="control_gen_4">more</a>
+      </li>
+    
+    
+      <li class="country-search">
+        Browse members <a href="country.html">by country</a>
+      </li>
+  </ol> 
+  </div>
+    <p id="agreement">
+          <strong>*</strong> By joining LinkedIn, you agree to LinkedIn's <a href="agrement.html">User Agreement</a>, <a href="home.html">Privacy Policy</a> and <a href="home.html">Cookie Policy</a>.
+    </p>
+  </div>
+ </div>
+           </div>
+</div>
 
-	<%= yield %>
 
 
-    </section></div><!-- /container -->
+<div id="footer">
+ <div class="wrapper">
+ <ul class="nav-footer">
+ <li>
+ <a href="home.html" target="_blank" rel="nofollow" class="cust-svc-link"><strong>Help Center</strong></a>
 
-    <footer class="footer">
-      <div class="container">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>
-          Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.<br>
-          Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.
-        </p>
-      </div>
-    </footer>
+ </li>
+ <li><a href="home.html">About</a></li>
+ <li><a href="home.html" target="_blank">Press</a></li>
+ <li><a href="home.html" target="_blank">Blog</a></li>
+ <li><a href="home.html">Careers</a></li>
+ <li><a href="home.html">Advertising</a></li>
+ <li><a href="home.html" target="_blank">Talent Solutions</a></li>
+ <li><a href="home.html">Tools</a></li>
+ <li><a href="home.html" target="_blank">Mobile</a></li>
+ <li><a href="home.html" target="_blank">Developers</a></li>
+ <li><a href="home.html">Publishers</a></li>
+ 
+ <li class="last"><a href="home.html" target="_blank">SlideShare</a></li>
+ </ul>
 
-  
-</body></html>
+ <ul class="nav-footer">
+ <li><a href="home.html">LinkedIn Updates</a></li>
+ <li><a href="home.html">LinkedIn Influencers</a></li>
+ <li><a href="home.html">LinkedIn Jobs</a></li>
+ <li><a href="home.html">Jobs Directory</a></li>
+ <li><a href="home.html">Company Directory</a></li>
+ <li><a href="home.html">Groups Directory</a></li>
+ <li class="last"><a href="home.html">Title Directory</a></li>
+ </ul>
+ 
+ <p id="copyright" class="guest"><span>LinkedIn Corporation</span>  2013</p>
 
+
+
+ <ul class="nav-footer">
+ <li><a href="agrement.html">User Agreement</a></li>
+ <li><a href="home.html">Privacy Policy</a></li>
+ <li>
+ 
+ <a href="home.html" target="_blank" rel="nofollow">Community Guidelines</a>
+ </li>
+ <li><a href="home.html">Cookie Policy</a></li>
+ <li class="last"><a href="home.html">Copyright Policy</a></li>
+
+ </ul>
+ </div>
+</div>
+
+</body>
+</html>

