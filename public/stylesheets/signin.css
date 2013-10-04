@@ -1,0 +1,356 @@
+body 
+{
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    font-size: 62.5%;
+    line-height: 1.2;
+    color: #000;
+
+}
+
+.global-header {
+    background: #333;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #555555), color-stop(18%, #515151), color-stop(85%, #373737), color-stop(100%, #333333));
+    background-image: -webkit-linear-gradient(top, #555555 0%,#515151 18%,#373737 85%,#333333 100%);
+    background-image: -moz-linear-gradient(top, #555555 0%,#515151 18%,#373737 85%,#333333 100%);
+    background-image: -o-linear-gradient(top, #555555 0%,#515151 18%,#373737 85%,#333333 100%);
+    background-image: linear-gradient(top, #555555 0%,#515151 18%,#373737 85%,#333333 100%);
+    font-size: 13px;
+    line-height: 17px;
+    color: #333;
+    font-weight: normal;
+    z-index: 10001;
+    height: 42px;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+}
+
+div,h1, h2, a, ul,span, li 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    -webkit-text-size-adjust: 100%;
+}
+/*
+ul {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}*/
+
+div {
+    display: block;
+}
+
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 974px;
+    position: relative;
+}
+
+.logo-container{
+    margin-left: 0px;
+    margin-right: 5px;
+    background: url('/images/logo_linkedin.png') left center no-repeat;
+    width:100px;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    margin-top: 0px;
+    display: block;
+    height: 36px;
+    position: relative;
+    left: -1px;
+    float: left;
+}
+
+
+.nav {
+    float:right;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+.nav-item {
+    float: left;
+    line-height: 13px;
+    position: relative;
+}
+
+.global-header .nav .nav-link 
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #D7D7D7;
+    margin-top:10px;
+    padding-bottom: 0px;
+    font-size:15px;
+    font-family:Arial Narrow;
+    color:Silver;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+
+.nav-footer {
+    font-size: 13px;
+    line-height: 17px;
+    color: #333;
+    font-weight: normal;
+}
+
+.nav-footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+#footer {
+    font-size: 12px;
+    line-height: 14px;
+    color: #666;
+    font-weight: normal;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 974px;
+    border-top: 1px solid #ccc;
+    bottom:0%;
+    position:relative;
+    bottom: auto;
+}
+
+
+ul {
+    margin: 0 0 10px 25px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+#footer .nav-footer li{
+    border-right: 1px solid #ccc;
+    margin-right: 8px;
+    padding-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+#copyright {
+    border-right: 1px solid #ccc;
+    margin-right: 8px;
+    padding-right: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+#footer #copyright.guest span {
+    float: left;
+    height: 16px;
+    width: 62px;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 3px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    background: url('/images/aaa.png') no-repeat scroll top left transparent;
+}
+#footer .nav-footer>li.last, #footer #nav-legal>li.last {
+    border-right: none;
+}
+
+#footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    top:30px;
+
+}
+
+
+/*----------------------------Rida start  ---------------------------------*/
+
+.background
+{
+    background-color: #e6e6e6;
+}
+
+.fieldgroup {
+    margin: 0 0 0 110px;
+    padding: 0;
+    padding-left: 10px;
+}
+
+
+/*-------------------------------Rida Ends--------------------------*/
+/*-------------------------------Sana Start--------------------------*/
+
+
+#body1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 974px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+#page-title {
+    margin: 0 10px 15px 10px;
+}
+
+#page-title h1, #page-title h1 a {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #000;
+}
+
+#body1 .wrapper {
+    padding: 0 10px;
+}
+
+.signin {
+    margin-bottom: 10px;
+}
+
+.signin #cookieDisabled {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.signin ul {
+    border: none;
+    background: #fff;
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px 20px 30px 0px;
+}
+
+.signin li {
+    overflow: hidden;
+    margin-bottom: 4px;
+    margin-left: -80px;
+    zoom: 1;
+}
+
+.signin label {
+    width: 110px;
+    font-size: 13px;
+    color: #333;
+    display: block;
+    float: left;
+    text-align: right;
+    padding-right: 8px;
+    width: 210px;
+    font-weight: bold;
+    line-height: 33px;
+}
+
+.signin .fieldgroup {
+    width: 450px;
+    padding: 3px 0;
+}
+
+.signin .fieldgroup input {
+    font-size: 16px;
+    width: 220px;
+}
+
+.signin .fieldgroup a {
+    font-size: 11px;
+    padding-left: 5px;
+}
+
+.signin .button {
+    margin-left: 117px;
+    margin: 10px 0 0 218px;
+    width: 410px;
+}
+
+.signin .button input {
+    vertical-align: middle;
+}
+
+.btn-primary, .btn-menu-open.btn-primary, .btn-split.btn-primary:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #73aec9), color-stop(5%, #73aec9), color-stop(5%, #338ab0), color-stop(100%, #0571a6));
+    background: linear-gradient(top, #73aec9 0%,#73aec9 1px,#338ab0 1px,#0571a6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#338AB0', endColorstr='#0571A6',GradientType=0 );
+    border-color: #045a8b;
+    color: #fff !important;
+}
+.button span {
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.btn-primary, .btn-new-primary, .btn-secondary, .btn-new-secondary, .btn-tertiary, .btn-ternary, .btn-quaternary, .btn-action {
+    border-width: 1px;
+    border-style: solid;
+background: -moz-linear-gradient(top, #003077,  #003077);
+    font-size: 12px;
+    line-height: 1.35;
+    margin: 0;
+    overflow: visible;
+    padding: 3px 10px 2px;
+    text-decoration: none !important;
+    vertical-align: top;
+    width: auto;
+}
+
+
+/*------------------sana ends----------------------------------*/
+
+
+/*---------------zuhair starts------------------------------*/
+
+a:visited, #footer a:visited {
+    color: #069;
+}
+a {
+    text-decoration: none;
+    color: #069;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #069;
+}
+
+/*---------------zuhair ends----------------------*/
